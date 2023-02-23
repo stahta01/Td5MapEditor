@@ -43,13 +43,13 @@ class td5mapGraph
         void SetRange2D(double minX, double maxX, double minY, double maxY);
         void DrawLine2D(wxCoord x1, wxCoord y1, wxCoord x2, wxCoord y2);
 
-        void DrawPolygon2D(int n, wxPoint points[], wxCoord xoffset = 0, wxCoord yoffset = 0, wxPolygonFillMode fill_style = wxODDEVEN_RULE);
+        void DrawPolygon2D(int n, wxPoint points[], wxCoord xoffset = 0, wxCoord yoffset = 0, int /*wxPolygonFillMode*/ fill_style = wxODDEVEN_RULE);
         void DrawText2D(const wxString& text, wxCoord x, wxCoord y);
 
         void SetRange3D(double minX, double maxX, double minY, double maxY, double minZ, double maxZ, double orgX = 0.0, double orgY = 0.0);
         point3D DrawLine3D(double xbegin, double ybegin, double zbegin, double xend, double yend, double zend);
         point3D DrawLine3D(point3D pt3dBegin, point3D pt3dEnd);
-        void DrawPolygon3D(int n, point3D points3d[], wxCoord xoffset = 0, wxCoord yoffset = 0, wxPolygonFillMode fill_style = wxODDEVEN_RULE);
+        void DrawPolygon3D(int n, point3D points3d[], wxCoord xoffset = 0, wxCoord yoffset = 0, int /*wxPolygonFillMode*/ fill_style = wxODDEVEN_RULE);
         void DrawText3D(const wxString& text, wxCoord x, wxCoord y, wxCoord z);
     	wxPoint TransformTo2D(point3D pt3d);
         wxPoint TransformTo2D(double x, double y, double z);

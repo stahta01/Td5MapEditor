@@ -281,7 +281,7 @@ void dc3d::DrawText(const wxString& text, wxCoord x, wxCoord y, wxCoord z)
     m_dc->DrawText(text, pt.x, pt.y);
 }
 
-void dc3d::DrawPolygon(int n, point3d points3d[], wxCoord xoffset, wxCoord yoffset, /*int*/wxPolygonFillMode fill_style)
+void dc3d::DrawPolygon(int n, point3d points3d[], wxCoord xoffset, wxCoord yoffset, int /*wxPolygonFillMode*/ fill_style)
 {
     wxPoint *points2d = new wxPoint[n];
 

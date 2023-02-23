@@ -293,12 +293,12 @@ point3D td5mapGraph::DrawLine3D(point3D pt3dBegin, point3D pt3dEnd)
 	return pt3d;
 }
 
-void td5mapGraph::DrawPolygon2D(int n, wxPoint points[], wxCoord xoffset, wxCoord yoffset, wxPolygonFillMode fill_style)
+void td5mapGraph::DrawPolygon2D(int n, wxPoint points[], wxCoord xoffset, wxCoord yoffset, int /*wxPolygonFillMode*/ fill_style)
 {
     m_dc->DrawPolygon(n, points, xoffset, yoffset, fill_style);
 }
 
-void td5mapGraph::DrawPolygon3D(int n, point3D points3d[], wxCoord xoffset, wxCoord yoffset, wxPolygonFillMode fill_style)
+void td5mapGraph::DrawPolygon3D(int n, point3D points3d[], wxCoord xoffset, wxCoord yoffset, int /*wxPolygonFillMode*/ fill_style)
 {
     wxPoint *points2d = new wxPoint[n];
 

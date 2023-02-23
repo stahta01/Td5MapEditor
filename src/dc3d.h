@@ -43,7 +43,7 @@ class dc3d : public wxObject
 public:
 	point3d DrawLine(double xbegin, double ybegin, double zbegin, double xend, double yend, double zend);
 	point3d DrawLine(point3d pt3dBegin, point3d pt3dEnd);
-	void DrawPolygon(int n, point3d points3d[], wxCoord xoffset = 0, wxCoord yoffset = 0, /*int*/wxPolygonFillMode fill_style = wxODDEVEN_RULE);
+	void DrawPolygon(int n, point3d points3d[], wxCoord xoffset = 0, wxCoord yoffset = 0, int /*wxPolygonFillMode*/ fill_style = wxODDEVEN_RULE);
 	void DrawText(const wxString& text, wxCoord x, wxCoord y, wxCoord z);
 
 	void SetDC(wxDC* pDC);
