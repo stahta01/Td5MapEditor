@@ -22,7 +22,9 @@
 					<Add option="-D__WXMSW__" />
 					<Add option="-D__WINDOWS__" />
 					<Add option="-D__WIN32__" />
-					<Add directory="C:/wxWidgets/lib/gcc_lib/mswd" />
+					<Add option="-D_UNICODE" />
+					<Add option="-DUNICODE" />
+					<Add directory="C:/wxWidgets/lib/gcc_lib/mswud" />
 					<Add directory="C:/wxWidgets/include" />
 					<Add directory="C:/wxWidgets/contrib/include" />
 				</Compiler>
@@ -31,8 +33,8 @@
 					<Add directory="C:/wxWidgets/include" />
 				</ResourceCompiler>
 				<Linker>
-					<Add library="libwxmsw28d_core.a" />
-					<Add library="libwxbase28d.a" />
+					<Add library="libwxmsw28ud_core.a" />
+					<Add library="libwxbase28ud.a" />
 					<Add library="libwxpngd.a" />
 					<Add library="libwxzlibd.a" />
 					<Add library="libkernel32.a" />
@@ -48,9 +50,9 @@
 					<Add library="libcomctl32.a" />
 					<Add library="libwsock32.a" />
 					<Add library="libodbc32.a" />
-					<Add library="libwxmsw28d_dbgrid.a" />
-					<Add library="libwxbase28d_odbc.a" />
-					<Add library="libwxmsw28d_adv.a" />
+					<Add library="libwxmsw28ud_dbgrid.a" />
+					<Add library="libwxbase28ud_odbc.a" />
+					<Add library="libwxmsw28ud_adv.a" />
 					<Add directory="C:/wxWidgets/lib/gcc_lib" />
 				</Linker>
 			</Target>
@@ -69,7 +71,9 @@
 					<Add option="-D__WXMSW__" />
 					<Add option="-D__WINDOWS__" />
 					<Add option="-D__WIN32__" />
-					<Add directory="C:/wxWidgets/lib/gcc_lib/msw" />
+					<Add option="-D_UNICODE" />
+					<Add option="-DUNICODE" />
+					<Add directory="C:/wxWidgets/lib/gcc_lib/mswu" />
 					<Add directory="C:/wxWidgets/include" />
 					<Add directory="C:/wxWidgets/contrib/include" />
 				</Compiler>
@@ -79,8 +83,8 @@
 				</ResourceCompiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="libwxmsw28_core.a" />
-					<Add library="libwxbase28.a" />
+					<Add library="libwxmsw28u_core.a" />
+					<Add library="libwxbase28u.a" />
 					<Add library="libwxpng.a" />
 					<Add library="libwxzlib.a" />
 					<Add library="libkernel32.a" />
@@ -96,9 +100,9 @@
 					<Add library="libcomctl32.a" />
 					<Add library="libwsock32.a" />
 					<Add library="libodbc32.a" />
-					<Add library="libwxbase28_odbc.a" />
-					<Add library="libwxmsw28_dbgrid.a" />
-					<Add library="libwxmsw28_adv.a" />
+					<Add library="libwxbase28u_odbc.a" />
+					<Add library="libwxmsw28u_dbgrid.a" />
+					<Add library="libwxmsw28u_adv.a" />
 					<Add directory="C:/wxWidgets/lib/gcc_lib" />
 				</Linker>
 			</Target>
@@ -235,9 +239,6 @@
 		<Unit filename="src/wizNewMapPage1.cpp" />
 		<Unit filename="src/wizNewMapPage1.h" />
 		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
 			<AutoVersioning>
 				<Scheme minor_max="99" build_max="9999" rev_max="99" rev_rand_max="1" build_times_to_increment_minor="9999" />
 				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="1" do_auto_increment="0" ask_to_increment="1" language="C++" svn="0" svn_directory="" header_path="src\version.h" />
