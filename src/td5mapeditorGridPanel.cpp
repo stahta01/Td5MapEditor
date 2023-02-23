@@ -161,7 +161,7 @@ void td5mapeditorGridPanel::UpdateGrid(td5mapeditorDoc *doc)
             }
         }
         else
-            m_grid->SetRowLabelStringValue(row, "");
+            m_grid->SetRowLabelStringValue(row, wxT_2(""));
     }
 
     for (int col = 0; col < m_grid->GetNumberCols(); col++)
@@ -178,7 +178,7 @@ void td5mapeditorGridPanel::UpdateGrid(td5mapeditorDoc *doc)
             }
         }
         else
-            m_grid->SetColLabelStringValue(col, "");
+            m_grid->SetColLabelStringValue(col, wxT_2(""));
     }
 
 	for (int row = 0; row < m_grid->GetNumberRows(); row++)
