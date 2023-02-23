@@ -24,13 +24,13 @@
 					<Add option="-D__WIN32__" />
 					<Add option="-D_UNICODE" />
 					<Add option="-DUNICODE" />
-					<Add directory="C:/wxWidgets/lib/gcc_lib/mswud" />
-					<Add directory="C:/wxWidgets/include" />
-					<Add directory="C:/wxWidgets/contrib/include" />
+					<Add directory="$(#wx.lib)/gcc_lib/mswud" />
+					<Add directory="$(#wx.include)" />
+					<Add directory="$(#wx)/contrib/include" />
 				</Compiler>
 				<ResourceCompiler>
-					<Add directory="C:/wxWidgets/lib/gcc_lib/mswd" />
-					<Add directory="C:/wxWidgets/include" />
+					<Add directory="$(#wx.lib)/gcc_lib/mswud" />
+					<Add directory="$(#wx.include)" />
 				</ResourceCompiler>
 				<Linker>
 					<Add library="libwxmsw28ud_core.a" />
@@ -53,7 +53,7 @@
 					<Add library="libwxmsw28ud_dbgrid.a" />
 					<Add library="libwxbase28ud_odbc.a" />
 					<Add library="libwxmsw28ud_adv.a" />
-					<Add directory="C:/wxWidgets/lib/gcc_lib" />
+					<Add directory="$(#wx.lib)/gcc_lib" />
 				</Linker>
 			</Target>
 			<Target title="Win32 Release">
@@ -73,13 +73,13 @@
 					<Add option="-D__WIN32__" />
 					<Add option="-D_UNICODE" />
 					<Add option="-DUNICODE" />
-					<Add directory="C:/wxWidgets/lib/gcc_lib/mswu" />
-					<Add directory="C:/wxWidgets/include" />
-					<Add directory="C:/wxWidgets/contrib/include" />
+					<Add directory="$(#wx.lib)/gcc_lib/mswu" />
+					<Add directory="$(#wx.include)" />
+					<Add directory="$(#wx)/contrib/include" />
 				</Compiler>
 				<ResourceCompiler>
-					<Add directory="C:/wxWidgets/lib/gcc_lib/msw" />
-					<Add directory="C:/wxWidgets/include" />
+					<Add directory="$(#wx.lib)/gcc_lib/mswu" />
+					<Add directory="$(#wx.include)" />
 				</ResourceCompiler>
 				<Linker>
 					<Add option="-s" />
@@ -103,7 +103,7 @@
 					<Add library="libwxbase28u_odbc.a" />
 					<Add library="libwxmsw28u_dbgrid.a" />
 					<Add library="libwxmsw28u_adv.a" />
-					<Add directory="C:/wxWidgets/lib/gcc_lib" />
+					<Add directory="$(#wx.lib)/gcc_lib" />
 				</Linker>
 			</Target>
 			<Target title="Linux x64 Debug">
